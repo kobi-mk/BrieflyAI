@@ -11,7 +11,7 @@ const { HfInference } = require('@huggingface/inference'); // Hugging Face Infer
 dotenv.config();
 
 // Initialize Hugging Face Inference
-const hf = new HfInference(process.env.HUGGINGFACE_API_KEY); // Use your Hugging Face API Key
+const hf = new HfInference("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"); // Use your Hugging Face API Key
 
 const PORT = 8800;
 const app = express();

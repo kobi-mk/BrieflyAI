@@ -17,7 +17,10 @@ const PORT = 8800;
 const app = express();
 
 // Enable cross-origin requests and handle JSON payloads up to 5MB
-app.use(cors());
+app.use(cors({
+  origin: 'http://16.171.10.80:3000', // Change this to the front-end URL
+  methods: 'GET,POST',
+}));
 app.use(express.json({ limit: '5mb' }));
 
 // Configure file upload handling

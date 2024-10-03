@@ -10,7 +10,7 @@ function App() {
   const [isCopy, setIsCopy] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
 
-  const apiURL = "http://localhost:8800"; // Your backend server URL
+  const apiURL = "http://16.171.10.80:8800"; // Your backend server URL
 
   // Handle dark mode toggle
   const toggleDarkMode = () => {
